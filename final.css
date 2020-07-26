@@ -1,0 +1,344 @@
+html
+{
+	position: absolute;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	font-family: Roboto Condensed;
+}
+
+body
+{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+	background-color: black;
+}
+
+canvas
+{
+	height: 100%;
+	width: 100%;
+}
+
+.hover 
+{
+	cursor: hand;
+}
+
+#swap
+{
+	display: none;
+}
+
+#background
+{
+	position: absolute;
+	margin-top: 140px;
+	margin-left: -250px;
+	width: 250px;
+	height: 500px;
+	background-color: rgba(122, 122, 122, 200);
+}
+
+#songLoader
+{
+	display: block;
+	position: absolute;
+	width: 250px;
+	margin-top: 150px;
+	margin-left: -250px;
+	height: 100px;
+}
+
+#songLoader input
+{
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+#load {
+	display: block;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: LightGray;
+	padding: 2px;
+	text-align: center;
+	font-family: Roboto Condensed;
+	font-weight: bold;
+	width:100px;
+	height:50px;
+	border: none;
+	border-radius: 20px;
+}
+
+#load:hover {
+	border: solid 1px;
+	border-color: white;
+	cursor: hand;
+}
+
+#cubeMenu
+{
+	display: none;
+	position: absolute;
+	width: 250px;
+	margin-top: 250px;
+	margin-left: -250px;
+	height: 250px;
+	border-top-right-radius: 50px;
+}
+
+#cubeMenu input
+{
+	display: inline-block;
+	width: 40%;
+	height: 20px;
+	margin-top: 20px;
+	margin-left: 5%;
+	overflow: auto;
+}
+
+#cubeMenu p
+{
+	display: block;
+	margin: 0;
+}
+
+#cubeMenu div
+{
+	display: inline-block;
+	text-align: center;
+	background-color: lightGray;
+	border-radius: 2px;
+	height: 20px;
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 20px;
+}
+
+#cubeMenu div: hover
+{
+	background-color: white;
+}
+
+#radialCubeMenu
+{
+	display: none;
+	position: absolute;
+	width: 250px;
+	margin-top: 250px;
+	margin-left: -250px;
+	height: 250px;
+	border-top-right-radius: 50px;
+}
+
+#radialCubeMenu input
+{
+	display: inline-block;
+	width: 40%;
+	height: 20px;
+	margin-top: 20px;
+	margin-left: 5%;
+	overflow: auto;
+}
+
+#radialCubeMenu p
+{
+	display: block;
+	margin: 0;
+}
+
+#radialCubeMenu div
+{
+	display: inline-block;
+	text-align: center;
+	background-color: lightGray;
+	border-radius: 2px;
+	height: 20px;
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 20px;
+}
+
+#radialCubeMenu div: hover
+{
+	background-color: white;
+}
+
+
+#particleMenu
+{
+	display: block;
+	position: absolute;
+	width: 250px;
+	margin-top: 250px;
+	margin-left: -250px;
+	height: 250px;
+	border-top-right-radius: 50px;
+}
+
+#particleMenu form
+{
+	margin-top: 50px;
+	margin-left: 3px;
+	margin-bottom: 5px;
+}
+
+#particleMenu input
+{
+	margin-left: 3px;
+	margin-bottom: 10px;
+}
+
+#changeParticles
+{
+	width: 40%;
+	margin-bottom: 15px;
+	margin-left: 30%;
+	background-color: LightGray;
+	border-radius: 5px;
+	text-align: center;
+}
+
+#changeParticles:hover
+{
+	background-color: white;
+}
+
+#logo
+{
+	position: absolute;
+	width: 200px;
+	height: auto;
+}
+
+#showOptions
+{
+	display: block;
+	position: absolute;
+	margin-top: 400px;
+	margin-right: 0px;
+	width: 50px;
+	height: 100px;
+	background-color: grey;
+	border-bottom-right-radius: 50px;
+	border-top-right-radius: 50px;
+}
+
+#showOptions img
+{
+	display: block;
+	margin-top: 25px;
+}
+
+#showOptions:hover
+{
+	background-color: LightGray;
+}
+
+#modesMenu
+{
+	position: absolute;
+	height: 200px;
+	margin-top: 500px;
+	width: 250px;
+	margin-left: -250px;
+}
+
+.modesOptions
+{
+	display: inline-block;
+	margin-bottom: 0;
+	margin-top: 0;
+	height: 10px;
+	width: 40%;
+	margin-left: 5%;
+}
+
+#modesMenu p
+{
+	display: block;
+	text-align: center;
+	background-color: LightGray;
+	border-radius: 5px;
+}
+
+#modesMenu p:hover
+{
+	background-color: white;
+}
+
+#motionBlur
+{
+	display: inline-block;
+	width: 90%;
+	height: 10px;
+	margin-left: 5%;
+	margin-top: 20px;
+}
+
+
+#songController
+{
+	display: block;
+	color: white;
+	width: 65%;
+	height: 50px;
+	margin-left: 35%;
+	position: absolute;
+}
+
+#songController div
+{
+	display: inline-block;
+}
+
+#name
+{
+	position: relative;
+	margin-bottom: 25px;
+}
+
+.colors 
+{
+	display: inline-block;
+	width: 30%;
+	height: 10%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#red 
+{
+	margin-left: 2.5%;
+	background-color: red;
+	border-radius: 2px;
+}
+
+#blue
+{
+	background-color: blue;
+	border-radius: 2px;
+}
+
+#green
+{
+	background-color: green;
+	border-radius: 2px;
+}
+
+#gradient
+{
+	border-radius: 2px;
+	display: box;
+	width: 94%;
+	height: 10%;
+	margin-top: 10px;
+    margin-left: 2.5%;
+	background: -webkit-linear-gradient(left, red, green, blue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, red, green, blue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, red, green, blue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(left, red, green, blue); /* Standard syntax */
+}

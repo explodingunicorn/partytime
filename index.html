@@ -1,0 +1,73 @@
+<html> 
+	<head> 
+		<title>Party Time!</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="final.css">
+		<script src="js/jquery.js"></script> 
+		<script type="text/javascript" src="jscolor/jscolor.js"></script>
+		<script src="js/rainbowvis.js"></script>
+	</head> 
+
+	<body>
+		<img id="logo" src="images/partytime.png">
+
+		<div id="background">
+		</div>
+
+		<div id="showOptions">
+			<img src="images/appbar.list.gear.png" height="50" width="50">
+		</div>
+
+		<div id="songLoader">
+			<input type="file" id="songFile" multiple>
+			<div id ="load"><p>Load</p></div>
+		</div>
+
+		<div id = "modesMenu">
+			<div id="particles" class="hover modesOptions"><p>Particles</p></div>
+			<div id="cubes" class="hover modesOptions"><p>Cubes</p></div>
+			<div id="radialCubes" class="hover modesOptions"><p>Radial</p></div>
+			<div id="motionBlur" class="hover"><p>Motion Blur</p></div>
+		</div>
+
+		<div id="songController">
+			<div id ="play" class="hover"><img src="images/appbar.control.play.png" height = "50" width = "50"></div>
+			<div id ="pause" class="hover"><img src="images/appbar.control.pause.png" height = "50" width = "50"></div>
+			<div id ="back" class="hover"><img src="images/appbar.control.rewind.variant.png" height = "50" width = "50"></div>
+			<div id ="forward" class="hover"><img src="images/appbar.control.fastforward.variant.png" height = "50" width = "50"></div>
+			<div id="name"></div>
+		</div>
+
+		<div id="cubeMenu">
+			<input id="c1"class="color {hash: true}" value="66ff00">
+			<input id="c2"class="color {hash: true}" value="ffffff">
+			<div id="swapColors" class="hover"><p>Swap Colors</p></div>
+			<div id="randomColors" class="hover"><p>Random Colors</p></div>
+
+		</div>
+
+		<div id="radialCubeMenu">
+			<input id="c3"class="color {hash: true}" value="66ff00">
+			<input id="c4"class="color {hash: true}" value="ffffff">
+			<div id="swapRadColors" class="hover"><p>Swap Colors</p></div>
+			<div id="randomRadColors" class="hover"><p>Random Colors</p></div>
+
+		</div>
+
+		<div id="particleMenu">
+			<form action = "vis_form.asp">
+				Systems: <input type="text" name="nSystems" id="systems" value="10"><br>
+				Particles: <input type="text" name="nParticles" id="nParticles" value="2000"><br>
+			</form>
+			<div id="changeParticles" class="hover">Submit</div>
+			<div id="red" class="colors"></div>
+			<div id="green" class="colors"></div>
+			<div id="blue" class="colors"></div>
+			<div id="gradient"></div>
+		</div>
+
+		<script src = "js/three.min.js"></script> 
+		<audio id="player" src=""></audio>
+		<script src="js/particles.js"></script>
+	</body>
+</html>
